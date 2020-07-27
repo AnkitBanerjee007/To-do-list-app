@@ -1,0 +1,154 @@
+body{
+	/*background: linear-gradient(to right , rgb(0, 0, 0), rgb(41, 36, 41));*/
+	 background: url(image.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+	/*object-fit: cover;*/
+
+}
+/*
+section{
+	display:flex;
+}*/
+/*.todo{
+	width: 50%;
+}
+*/
+
+
+
+.container{
+	width: 700px;
+	margin:100px auto;
+	background: #f7f7f7;
+	box-shadow: 7px 7px 7px rgba(255,255,255,0.4);
+	border-radius: 7px;
+	/*border:1px solid linear-gradient(to right , rgb(56, 0, 0), rgb(74, 74, 74));*/
+	/*border-radius: 30%;*/
+}
+
+h1{
+	background:#cb3c6a;
+	/*background: #2980b9;rgb(0, 145, 255);*/
+	margin: 0;
+	color: #f2f2f2;
+	/*text-align: center;*/
+	/*font-family: 'Permanent Marker', cursive;*/
+	font-family: 'Rowdies', cursive;
+	padding: 10px 20px;
+	/*text-transform: uppercase;*/
+	font-size: 24px;
+	border-top-right-radius: 7px;
+	font-weight: normal;
+	letter-spacing: 0.2rem;
+	/*border-radius: 50%;*/
+	/*letter-spacing: 0.5rem;*/
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding:0;
+	font-family: 'Bitter', serif;
+	/*font-family: 'Permanent Marker', cursive;*/
+}
+
+li {
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	color: #555;
+}
+
+li:nth-child(2n){
+	background: #f7f7f7;
+}
+input{
+	/*height: 40px;*/
+	padding:15px 15px 15px 18px;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 18px;
+	color: #cb3c6a;
+	border: 3px solid rgba(0,0,0,0.1);
+}
+input:focus{
+	border:2px solid #cb3c6a;
+	outline: none;
+	background: #f7f7f7;
+}
+
+.fa-plus{
+	float: right;
+	padding-top: 4px;
+}
+.fa-plus:hover{
+	cursor: pointer;
+}
+
+span{
+	background: red;
+	color: #fff;
+	height:  100%;
+	margin-right: 16px;
+	width: 0px;
+	display: inline-block;
+	text-align: center;
+	transition: 0.5s ease;
+	opacity: 0;
+
+}
+li:hover span{
+	width: 40px;
+	cursor: pointer;
+	opacity: 1;
+}
+
+li:hover{
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+.instruct{
+	width: 50%;
+	
+	
+}
+.content{
+	margin-left: 50px;
+	margin-top: 100px;
+	
+}
+
+.content h2{
+	color: #cb3c6a;
+	font-size: 2.2rem;
+	letter-spacing: 0.2rem;
+	line-height: 2;
+	font-family: 'Permanent Marker', cursive;
+}
+.content p{
+	color: #fff;
+	font-size: 1.5rem;
+	line-height: 1.7;
+	font-family: 'Bitter', serif;
+	font-weight: 600;
+}
+
+
+@media only screen and (max-width: 960px){
+	.container{
+		max-width: 370px;
+		margin-left: 50px;
+	}
+	.instruct{
+		display: none;
+	}
+}
